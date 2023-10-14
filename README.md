@@ -54,6 +54,7 @@ This is an example of input and output for the algorithm.
 ## Notes
 
 -Make sure to provide coordinates in decimal degrees and distances in kilometers.
+
 -This algorithm assumes the Earth is an authalic sphere (not an ellipsoid). If you are working with an ellipsoid, the formulas may be different.
 
 ## License
