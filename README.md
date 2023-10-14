@@ -16,7 +16,6 @@ To clone use:
   ```bash
   git clone https://github.com/d4v1-sudo/trilateration.git
 ```
-<br>
   If you download the repository, unzip de .zip file.
 <br><br>
 2. Run the Python script:
@@ -28,7 +27,6 @@ To clone use:
 3. Provide the coordinates and altitudes of reference points A, B, and C, as well as the distances from an unknown point to each of these points when prompted.
 <br><br>
 4. The script will calculate and print the geographic coordinates of the unknown point.
-<br>
 
 ## Example
 
