@@ -11,19 +11,22 @@ This is a geospatial trilateration algorithm that calculates the geographic coor
 
 1. Download or clone this repository.
 
-   To clone use:
+To clone use:
 
   ```bash
   git clone https://github.com/d4v1-sudo/trilateration.git
 ```
   If you download the repository, unzip de .zip file.
 
+
 2. Run the Python script:
   
   ```bash
   python3 trilateration.py
   ```
+
 3. Provide the coordinates and altitudes of reference points A, B, and C, as well as the distances from an unknown point to each of these points when prompted.
+
 4. The script will calculate and print the geographic coordinates of the unknown point.
 
 ## Example
