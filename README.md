@@ -16,17 +16,17 @@ To clone use:
   ```bash
   git clone https://github.com/d4v1-sudo/trilateration.git
 ```
+<br>
   If you download the repository, unzip de .zip file.
-
-
+<br>
 2. Run the Python script:
   
   ```bash
   python3 trilateration.py
   ```
-
+<br>
 3. Provide the coordinates and altitudes of reference points A, B, and C, as well as the distances from an unknown point to each of these points when prompted.
-
+<br>
 4. The script will calculate and print the geographic coordinates of the unknown point.
 
 ## Example
@@ -53,9 +53,8 @@ This is an example of input and output for the algorithm.
 
 ## Notes
 
--Make sure to provide coordinates in decimal degrees and distances in kilometers.
-
--This algorithm assumes the Earth is an authalic sphere (not an ellipsoid). If you are working with an ellipsoid, the formulas may be different.
+- **Make sure to provide coordinates in decimal degrees and distances in kilometers.**:
+- **This algorithm assumes the Earth is an authalic sphere (not an ellipsoid). If you are working with an ellipsoid, the formulas may be different**:
 
 ## License
 
