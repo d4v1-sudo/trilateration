@@ -1,4 +1,4 @@
-# Geospatial Trilateration
+# Trilateration
 
 This is a geospatial trilateration algorithm that calculates the geographic coordinates (latitude and longitude) of an unknown point based on known distances to three reference points (A, B, and C) and their geographic coordinates.
 
@@ -31,7 +31,7 @@ Longitude of point C: -0.1278
 Altitude of point C (in kilometers): 0
 Your distance to point C (in kilometers): 20
 
-Latitude: 38.9079, Longitude: -77.0373
+38.9079, -77.0373
 ```
 This is an example of input and output for the algorithm.
 
