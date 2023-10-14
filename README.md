@@ -18,8 +18,7 @@ To clone use:
 ```
 <br>
   If you download the repository, unzip de .zip file.
-<br>
-<br>
+<br><br>
 2. Run the Python script:
   
   ```bash
