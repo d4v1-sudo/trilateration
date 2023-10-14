@@ -28,6 +28,7 @@ To clone use:
 3. Provide the coordinates and altitudes of reference points A, B, and C, as well as the distances from an unknown point to each of these points when prompted.
 <br>
 4. The script will calculate and print the geographic coordinates of the unknown point.
+<br>
 
 ## Example
 
