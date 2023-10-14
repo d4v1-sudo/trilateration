@@ -2,13 +2,7 @@
 
 This is a geospatial trilateration algorithm that calculates the geographic coordinates (latitude and longitude) of an unknown point based on known distances to three reference points (A, B, and C) and their geographic coordinates.
 
-## Requirements
-
-- Python 3
-- Libraries: `math` and `numpy`
-
 ## Usage
-
 1. Download or clone this repository.
 
 To clone use:
@@ -18,15 +12,23 @@ To clone use:
 ```
   If you download the repository, unzip de .zip file.
 <br><br>
-2. Run the Python script:
+
+2. Download requirements:
+
+  ```bash
+  cd trilateration
+  pip install -r requierements.txt
+  ```
+<br>
+3. Run the Python script:
   
   ```bash
   python3 trilateration.py
   ```
 <br>
-3. Provide the coordinates and altitudes of reference points A, B, and C, as well as the distances from an unknown point to each of these points when prompted.
+4. Provide the coordinates and altitudes of reference points A, B, and C, as well as the distances from an unknown point to each of these points when prompted.
 <br><br>
-4. The script will calculate and print the geographic coordinates of the unknown point.
+5. The script will calculate and print the geographic coordinates of the unknown point.
 
 ## Example
 
