@@ -1,61 +1,83 @@
-# Trilateration
+# Trilateration on an Oblate Spheroid (Earth) in Python
 
-This is a geospatial trilateration algorithm that calculates the geographic coordinates (latitude and longitude) of an unknown point based on known distances to three reference points (A, B, and C) and their geographic coordinates.
+This Python code demonstrates how to perform trilateration on an oblate spheroid, such as the Earth. Trilateration is a method for determining an unknown location based on the distances from that location to known points.
+
+The code takes three known points, their latitudes, longitudes, altitudes, and distances to an unknown point. It then calculates the latitude, longitude, and altitude of the unknown point using the Earth's oblate spheroid model.
+
+## Dependencies
+
+This code uses the following Python libraries:
+
+- `math`: For mathematical calculations.
+- `numpy`: For numerical operations.
+
+Make sure to import these libraries before running the code.
 
 ## Usage
-1. Download or clone this repository.
 
-To clone use:
+### Download the Repository
 
-  ```bash
-  git clone https://github.com/d4v1-sudo/trilateration.git
-```
-  If you download the repository, unzip de .zip file.
-<br><br>
+You can download the repository in one of the following ways:
 
-2. Download requirements:
+#### Using Git
 
-  ```bash
-  cd trilateration
-  pip install -r requierements.txt
-  ```
-<br>
-3. Run the Python script:
-  
-  ```bash
-  python3 trilateration.py
-  ```
-<br>
-4. Provide the coordinates and altitudes of reference points A, B, and C, as well as the distances from an unknown point to each of these points when prompted.
-<br><br>
-5. The script will calculate and print the geographic coordinates of the unknown point.
+1. Clone the repository using Git by running the following command:
 
-## Example
+    ```bash
+    git clone https://github.com/your-username/trilateration.git
+    ```
 
-```bash
-Latitude of point A: 40.7128
-Longitude of point A: -74.0060
-Altitude of point A (in kilometers): 0
-Your distance to point A (in kilometers): 10
+#### Downloading from the Website
 
-Latitude of point B: 34.0522
-Longitude of point B: -118.2437
-Altitude of point B (in kilometers): 0
-Your distance to point B (in kilometers): 15
+1. Visit the GitHub repository page at [https://github.com/your-username/trilateration](https://github.com/your-username/trilateration).
+2. Click the "Code" button and select "Download ZIP" to download the repository as a ZIP file.
+3. Extract the contents of the ZIP file to your local machine.
 
-Latitude of point C: 51.5074
-Longitude of point C: -0.1278
-Altitude of point C (in kilometers): 0
-Your distance to point C (in kilometers): 20
+### Install the Required Libraries
 
-38.9079, -77.0373
-```
-This is an example of input and output for the algorithm.
+Before running the code, you need to install the necessary Python libraries. Open a terminal or command prompt and navigate to the project directory.
 
-## Notes
+1. Run the following command to install the required libraries using pip:
 
-- **Make sure to provide coordinates in decimal degrees and distances in kilometers.**:
-- **This algorithm assumes the Earth is an authalic sphere (not an ellipsoid). If you are working with an ellipsoid, the formulas may be different**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Run the Code
+
+1. In the terminal or command prompt, navigate to the project directory where you downloaded the repository.
+
+2. Run the Python script by executing the following command:
+
+    ```bash
+    python3 trilateration.py
+    ```
+
+3. Follow the prompts to provide the coordinates and altitudes of reference points A, B, and C, as well as the distances from an unknown point to each of these points.
+
+4. The script will calculate and print the geographic coordinates of the unknown point.
+
+## Code Explanation
+
+- The code converts the geodetic coordinates (latitude, longitude, and altitude) of the input points into Earth-Centered, Earth-Fixed (ECEF) coordinates.
+
+- It calculates the normal of the plane formed by the three known points by taking the cross product of vectors AB and AC.
+
+- The distances to each known point from the trilateration point are computed using the dot product with the normal vector.
+
+- Finally, the code calculates the ECEF coordinates of the trilateration point and converts them back into geodetic coordinates to obtain the latitude, longitude, and altitude.
+
+## Improvements
+
+You can enhance this code by adding more comments to explain the calculations in detail and by validating the input values to ensure they are within valid ranges.
+
+To reuse the geodetic-to-ECEF or ECEF-to-geodetic conversion functions in other projects, it's a good practice to place them in a separate module and import them.
+
+## Note
+
+Ensure that you have installed the `numpy` library if it's not already installed on your system.
+
+This code is a valuable tool for determining the location of an unknown point on the Earth's surface based on distance measurements from known reference points.
 
 ## License
 
