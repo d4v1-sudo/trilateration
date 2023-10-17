@@ -29,7 +29,7 @@ You can download the repository in one of the following ways:
 
 #### Downloading from the Website
 
-1. Visit the GitHub repository page at [https://github.com/your-username/trilateration](https://github.com/your-username/trilateration).
+1. Visit the GitHub repository page at [https://github.com/d4v1-sudo/trilateration](https://github.com/d4v1-sudo/trilateration.git).
 2. Click the "Code" button and select "Download ZIP" to download the repository as a ZIP file.
 3. Extract the contents of the ZIP file to your local machine.
 
